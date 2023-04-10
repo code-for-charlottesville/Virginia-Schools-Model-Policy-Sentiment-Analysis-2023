@@ -10,4 +10,9 @@ administration, which applies to all Virginia Public Schools.
 
 - [Comment Forum (townhall.virginia.gov)](https://townhall.virginia.gov/l/GDocForum.cfm?GDocForumID=1953)
 - [Scraped Comments (S3, JSONL, 65MB)](https://austin-schaffer.s3.amazonaws.com/virginia-town-hall/scraped-public-comments/March+2021+-+Model+Policies+for+the+Treatment+of+Transgender+Students+in+Virginia's+Public+Schools.jsonl)
-- [Web Scraper (GitHub)](https://github.com/AustinTSchaffer/Virginia-Town-Hall-Public-Comment-Scraper)
+- [Hand-Labeled Sample of 500 (Google Sheets)](https://docs.google.com/spreadsheets/d/1ZDifcVyUBzwGyuJ8NpkOWGP78OOMVMzpoZLOaEKYo-M/edit?usp=sharing)
+
+**Related Projects**
+
+- [Public Comment Web Scraper](https://github.com/AustinTSchaffer/Virginia-Town-Hall-Public-Comment-Scraper)
+- [polo2](https://github.com/ontoligent-design/polo2)
