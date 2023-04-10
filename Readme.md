@@ -1,8 +1,9 @@
 # Virginia Schools Model Policy Sentiment Analysis (2023)
 
 This repository functions as a shared resource for our ongoing
-effort to classify ~72,000 public comments. The comments were
-made in reference to a "model policy" proposed by the Younkin
+effort to classify ~72,000 public comments on a public town hall
+forum run by the state of Virginia. The comments were made in
+reference to a "model policy" proposed by the Younkin
 administration, which applies to all Virginia Public Schools.
 
 ## Links
