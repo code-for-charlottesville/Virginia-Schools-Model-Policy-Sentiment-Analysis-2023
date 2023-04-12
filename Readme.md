@@ -10,7 +10,7 @@ administration, which applies to all Virginia Public Schools.
 
 - [Comment Forum (townhall.virginia.gov)](https://townhall.virginia.gov/l/GDocForum.cfm?GDocForumID=1953)
 - [Scraped Comments (S3, JSONL, 65MB)](https://austin-schaffer.s3.amazonaws.com/virginia-town-hall/scraped-public-comments/2022+Virginia+Public+Schools+Model+Policy+Public+Comments.jsonl)
-- [Scraped Comments (S3, CSV, 58MB](https://austin-schaffer.s3.amazonaws.com/virginia-town-hall/scraped-public-comments/2022+Virginia+Public+Schools+Model+Policy+Public+Comments.csv) 
+- [Scraped Comments (S3, CSV, 58MB)](https://austin-schaffer.s3.amazonaws.com/virginia-town-hall/scraped-public-comments/2022+Virginia+Public+Schools+Model+Policy+Public+Comments.csv) 
 - [Hand-Labeled Sample of 500 (Google Sheets)](https://docs.google.com/spreadsheets/d/1ZDifcVyUBzwGyuJ8NpkOWGP78OOMVMzpoZLOaEKYo-M/edit?usp=sharing)
 
 **Related Projects**
