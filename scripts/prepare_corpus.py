@@ -9,7 +9,11 @@ data = list(map(json.loads, fd.readlines()))
 fd.close()
 
 def clean_string(data: str) -> str:
-    return data.replace("\n", " ")
+    return (
+        data
+        .replace("\r", "")
+        .replace("\n", " ")
+    )
 
 for i, doc in enumerate(data):
     data[i] = {
