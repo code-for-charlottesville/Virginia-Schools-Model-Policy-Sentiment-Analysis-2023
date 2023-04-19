@@ -1,7 +1,8 @@
 """
 Script to generate a 2nd CSV for allowing volunteers to label
 the sentiment for 250 additional public comments. There should
-be no overlap between.
+be no overlap between the previous sample of 500 comments and
+the new sample of 250 comments.
 """
 
 # %%
