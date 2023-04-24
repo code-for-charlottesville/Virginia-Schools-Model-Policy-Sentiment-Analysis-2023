@@ -5,7 +5,7 @@ be no overlap between the previous sample of 500 comments and
 the new sample of 250 comments.
 """
 
-# %%
+# %% Consts.
 
 import random
 import csv
@@ -14,7 +14,7 @@ CORPUS_FILENAME = "../data/2022 Virginia Public Schools Model Policy Public Comm
 PREV_SAMPLE_FILENAME = "../data/2022 Virginia Public Schools Model Policy Public Comments - 500 Row Sample.csv"
 NEW_SAMPLE_FILENAME = "../data/2022 Virginia Public Schools Model Policy Public Comments - 250 Row Sample.csv"
 
-# %%
+# %% Load the corpus and the previous sample.
 
 with open(CORPUS_FILENAME, "r") as corpus_fd:
     next(corpus_fd)
@@ -40,13 +40,13 @@ with open(PREV_SAMPLE_FILENAME, "r") as prev_sample_fd:
         delimiter=","
     ))
 
-# %%
+# %% Build some dicts and some sets.
 
 doc_index = {r['doc_key']: r for r in corpus}
 urls_in_prev_sample = {r['url'] for r in prev_sample}
 prev_used_titles_comments: set[tuple[str, str]] = set()
 
-# %%
+# %% Generate a list of the "available documents" i.e. unique title/comment combinations that haven't yet been included in a sample.
 
 for url in urls_in_prev_sample:
     doc = doc_index[url]
@@ -54,7 +54,7 @@ for url in urls_in_prev_sample:
 
 available_docs = []
 for doc in corpus:
-    if doc['doc_key'] in prev_used_titles_comments:
+    if doc['doc_key'] in urls_in_prev_sample:
         continue
 
     if (doc['doc_title'], doc['doc_content']) in prev_used_titles_comments:
@@ -63,11 +63,11 @@ for doc in corpus:
     available_docs.append(doc)
     prev_used_titles_comments.add((doc['doc_title'], doc['doc_content']))
 
-# %%
+# %% Take the sample.
 
 sample_250 = random.sample(available_docs, 250)
 
-# %%
+# %% Add 2 labelers to each record and remove columns that we don't need in Google Sheets.
 
 labelers = ["Austin", "Wolfgang", "Isaak", "Sirish", "Jon"]
 for i, record in enumerate(sample_250):
@@ -84,7 +84,7 @@ for i, record in enumerate(sample_250):
     record.pop('doc_date', None)
     record.pop('doc_label', None)
 
-# %%
+# %% Save the new sample to a CSV.
 
 with open(NEW_SAMPLE_FILENAME, "w") as new_sample_fd:
     dw = csv.DictWriter(
