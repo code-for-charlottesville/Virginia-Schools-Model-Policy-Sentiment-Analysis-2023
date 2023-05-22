@@ -12,10 +12,10 @@ administration, which applies to all Virginia Public Schools.
 - [Scraped Comments (S3, JSONL, 65MB)](https://austin-schaffer.s3.amazonaws.com/virginia-town-hall/scraped-public-comments/2022+Virginia+Public+Schools+Model+Policy+Public+Comments.jsonl)
 - [Scraped Comments (S3, CSV, 58MB)](https://austin-schaffer.s3.amazonaws.com/virginia-town-hall/scraped-public-comments/2022+Virginia+Public+Schools+Model+Policy+Public+Comments.csv) 
 - [Hand-Labeled Sample of 500 (Google Sheets)](https://docs.google.com/spreadsheets/d/1ZDifcVyUBzwGyuJ8NpkOWGP78OOMVMzpoZLOaEKYo-M/edit?usp=sharing)
+
+## Processing Results
+
 - [Machine-Labeled Corpus (Google Drive)](https://drive.google.com/file/d/1E_WIJ46Of7LRE1qmTAtC56q710MHW-i6/view?usp=sharing)
-
-## Isaak's Results
-
 - https://aclu-model-policy-comments.s3.amazonaws.com/classifications.csv
 - https://aclu-model-policy-comments.s3.amazonaws.com/comments.csv
 - https://aclu-model-policy-comments.s3.amazonaws.com/dupe_group_comments.csv
